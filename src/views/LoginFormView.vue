@@ -59,8 +59,8 @@ export default {
   },
   methods: {
     handleLogin(user) {
-      AuthService.login(user).then((response) => {
-        console.log(response)
+      AuthService.login(user).then(() => {
+        this.$router.push({ path: '/' })
       })
     }
   }
