@@ -59,9 +59,13 @@ export default {
   },
   methods: {
     handleLogin(user) {
-      AuthService.login(user).then(() => {
-        this.$router.push({ path: '/' })
-      })
+      AuthService.login(user)
+        .then(() => {
+          this.$router.push({ path: '/' })
+        })
+        .catch(() => {
+          this.message = 'could not login'
+        })
     }
   }
 }
