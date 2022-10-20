@@ -38,6 +38,7 @@
 <script>
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
+import AuthService from '@/services/AuthService.js'
 export default {
   name: 'LoginView',
   components: {
@@ -54,6 +55,13 @@ export default {
       loading: false,
       message: '',
       schema
+    }
+},
+  methods: {
+    handleLogin(user){
+      AuthService.login(user).then((response)=>{
+        console.log(response)
+      })
     }
   }
 }
