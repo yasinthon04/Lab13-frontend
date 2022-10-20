@@ -56,10 +56,10 @@ export default {
       message: '',
       schema
     }
-},
+  },
   methods: {
-    handleLogin(user){
-      AuthService.login(user).then((response)=>{
+    handleLogin(user) {
+      AuthService.login(user).then((response) => {
         console.log(response)
       })
     }
