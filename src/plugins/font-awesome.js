@@ -1,13 +1,13 @@
-import {library} from '@fortawesome/fontawesome-svg-core'
-import {FontAwesomwIcon} from '@fortawesome/vue-fontawesome'
-import { from } from 'core-js/core/array'
-import {
-    faHome,
-    faUser,
-    faUserPlus,
-    faSignInAlt,
-    faSignOutAlt
-} from '@fortawesome/free-solid-svg-icons'
-library.add(faHome,faHome,faUserPlus,faSignInAlt,faSignOutAlt)
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-export {FontAwesomeIcon}
+import {
+  faHome,
+  faUser,
+  faUserPlus,
+  faSignInAlt,
+  faSignOutAlt
+} from '@fortawesome/free-solid-svg-icons'
+library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt)
+
+export { FontAwesomeIcon }
