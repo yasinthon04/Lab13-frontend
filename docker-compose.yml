@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+    web:
+        image: "yasinthon04/se331-lab13-frontend:latest"
+        ports:
+            - 8001:80
